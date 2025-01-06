@@ -1,4 +1,13 @@
-var context = new AudioContext();
+const listItems = document.querySelectorAll("li");
+
+listItems.forEach((item) => {
+  item.addEventListener("mousedown", () => {
+    const frequency = item.getAttribute("data-frequency");
+    jsNota(frequency);
+  });
+});
+
+const context = new AudioContext();
 
 function jsNota(frecuencia) {
   var o = context.createOscillator();

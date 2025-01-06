@@ -33,7 +33,7 @@ li {
   float: left;
 }
 
-ul .white {
+.white {
   height: 16em;
   width: 4em;
   z-index: 1;
@@ -45,7 +45,7 @@ ul .white {
   background: linear-gradient(top, #eee 0%, #fff 100%);
 }
 
-ul .white:active {
+.white:active {
   border-top: 1px solid #777;
   border-left: 1px solid #999;
   border-bottom: 1px solid #999;
